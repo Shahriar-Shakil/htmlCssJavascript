@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>table</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" placeholder="Enter Your First Name" name="first_name" maxlength="20" list="student"/></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" placeholder="Enter Your Last Name" name="last_name"/></td>
+            </tr>
+            <tr>
+                <td>Institute Name</td>
+                <td><input type="text" placeholder="" name="institute_name" value="AITVET" size="30" readonly/></td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td><input type="email" name="email_address"/></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password"/></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="number" name="phone_number"/></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="choice"/>Male
+                    <input type="radio" name="choice"/>Female
+                </td>
+            </tr>
+            <tr>
+                <td>Date Of Birth</td>
+                <td><input type="date" name="date_of_birth"/></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea rows="10" cols="22" name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td>District Name</td>
+                <td>
+                    <select name="district_name">
+                        <option>---Select Your District Name---</option>
+                        <optgroup label="Dhaka Division">
+                            <option value="Dhaka">Dhaka</option>
+                            <option value="Savar">Savar</option>
+                            <option value="Gazipur">Gazipur</option>
+                        </optgroup>
+                        <optgroup label="Rangpur Division">
+                            <option value="Rangpur">Rangpur</option>
+                            <option value="Dinajpur">Dinajpur</option>
+                            <option value="Thakurgoan">Thakurgoan</option>
+                            <option value="panchagarh">panchagarh</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Your Image</td>
+                <td><input type="file" name="image" accept="image/*" multiple/></td>
+            </tr>
+            <tr>
+                <td>Agree</td>
+                <td><input type="checkbox" name="agree" value="1"/>I agree with terms & conditions</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="btn" value="Submit"/></td>
+            </tr>
+        </table>
+        <datalist id="student">
+            <option value="rohim">
+            <option value="Korim">
+            <option value="Saidul">
+            <option value="Sofiul">
+            <option value="Rofiqul">
+            <option value="Roton">
+            <option value="Kamal">
+        </datalist>
+    </body>
+</html>

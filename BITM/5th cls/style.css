@@ -1,0 +1,102 @@
+/*
+#para{
+    color:red;
+    font-size: 100px;
+}
+.test{
+    color:green;
+    font-size: 50px;
+}
+.div-one{
+    height: 200px;
+width:300px;
+background-color:red;
+float: left;
+}
+
+.div2{
+    height: 200px;
+    width:300px;
+    background-color:blue;
+    float:left;
+}
+.box1{
+    height: 200px;
+    width:20%;
+    background-color: aqua;
+    float: left;
+}
+.box2 {
+    height: 200px;
+    width:80%;
+    background-color: black;
+    float: left;
+}
+*/
+
+.first{
+    width: 100%;
+    height: 50px;
+    background-color: orangered;
+}
+.sec{
+    width: 30%;
+    height: 100px;
+    background-color: red;
+    float:left
+}
+.rd{
+    width: 40%;
+    height: 100px;
+    background-color: orange;
+    float: left;
+}
+.rth{
+    width: 30%;
+    height: 100px;
+   background-color: black;
+    float:left;
+}
+
+.fth{
+    width: 30%;
+    height: 400px;
+    background-color: black;
+    float:left;
+}
+.sth{
+    width: 70%;
+    height: 400px;
+    background-color: yellow;
+    float:left;
+}
+.sev{
+    width: 25%;
+    height: 100px;
+    background-color: yellow;
+    float:left;
+}
+.eig{
+    width: 25%;
+    height: 100px;
+    background-color: red;
+    float:left;
+}
+.nin{
+    width: 25%;
+    height: 100px;
+    background-color: orange;
+    float:left;
+}
+.ten{
+    width: 25%;
+    height: 100px;
+    background-color: aquamarine;
+    float:left;
+}
+.eleven{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+
+}

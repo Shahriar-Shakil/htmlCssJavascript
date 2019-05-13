@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h3{
+color:red;
+
+}
+</style>
+</head>
+<body>
+
+<h2>10 Example of JavaScript data type <h2>
+<button type="button" onclick="myFunction()">click me!</button>
+<h3 id="demo"></h3>
+<br>
+<p id="variable"></p>
+use of string ("")
+<p id="string"></p>
+<p id="object">example of object</p>
+
+<h3>to see the boolean data type example go to browser console<h3>
+
+
+<script>
+//use function to calculate some number and add it on a button
+function myFunction(){
+var
+x=12;
+y=8;
+z=x+y;
+document.getElementById("demo").innerHTML = z+" "+"taka";
+}
+</script>
+<script>
+//js data type number
+var x,y;
+x=10;
+y=5;
+document.getElementById("variable").innerHTML = x * y;
+</script>
+<script>
+//boolean test
+ var x,y;
+ x=5;
+ y=6;
+ console.log(x==y);
+ </script>
+ <script>
+ //use of string and number
+ var 
+ name= "Shahriar";
+ gender= "male";
+ age= 23
+ document.getElementById("string").innerHTML= name +" "+"is" +" "+age +" "+"years old";
+ console.log(gender);
+</script>
+<script>
+// object
+var mobile ={
+brand:"Nokia",
+model:1110,
+color:"blue",
+};
+document.getElementById("object").innerHTML =mobile.brand +" "+mobile.model;
+
+</script>
+</body>
+</html>

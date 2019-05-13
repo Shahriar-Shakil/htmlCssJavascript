@@ -1,0 +1,74 @@
+.header{
+    width: 100%;
+    min-height:600px;
+    background: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.container-control{
+    width: 75%;
+}
+.header-content{
+    margin-top: 160px;
+}
+.feature{
+    width: 100%;
+    min-height: 650px;
+}
+/*.mycard{
+    width:400px;
+}*/
+.container-margin{
+    margin-top: 150px;
+}
+.feature p{color: #6C7279;
+}
+.img-res{
+    width:100%;
+    height: 100%;
+}
+
+.works{
+    overflow: hidden;
+}
+.works img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.our-team{
+    margin-top: 150px;
+}
+.our-team p{
+    color: #80858B;
+}
+.testimonials{
+    overflow: hidden;
+
+}
+.testimonials img {
+    height: 350px;
+}
+.carousel-caption p{
+   text-align: left;
+}
+.big-p{
+    font-size: 24px;
+}
+.img-responsive{
+    height: 420px;
+    width: 100%;
+}
+.bg-purpel{
+    background-color: #53354a;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+.big-footer{
+    background-color:#3a3e64 ;
+}
+.sm-footer{
+    background-color: #313454;
+}

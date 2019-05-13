@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Number method</title>
+</head>
+<body>
+	<h1 id="demo" style="text-align: center;"></h1>
+	<h3 id="demo2"></h3>
+	<h3 id="demo3"></h3>
+	<h1 id="demo4" style="text-align: center;"></h1>
+	<h3 id="demo5"></h3>
+	<h2 id="demo6"></h2>
+	<h4 id="demo7"></h4>
+	<h4 id="demo8"></h4>
+	<h1 style="text-align: center;">Some Method of Array </h1>
+	<h3 id="array"></h3>
+	<h3 id="array1"></h3>
+	<h3 id="array2"></h3>
+	<h3> In console log I call an array that is inside another array</h3>
+	<script>
+
+		let x=5;
+		y= 10;
+		document.getElementById("demo").innerHTML =
+		"This is About Number method:"+ (y-x); 
+
+	</script>
+	<script>
+		let a = 11;
+		let b = 9.35670;
+		//toString() method
+		document.getElementById("demo2").innerHTML=
+		"appling toString() method:"+" "+ a.toString();
+		//toFixed() method
+		document.getElementById("demo3").innerHTML=
+		"appling toFixed() method:"+" "+ b.toFixed() +" "+"and"+" "+
+		b.toFixed(2);
+
+	</script>
+<script type="text/javascript">
+	document.getElementById("demo4").innerHTML=
+	"Here is some string method";
+	let txt ="\"abcdefghijklmnopqrstuvwxyz\"";
+	//document.write(txt);
+	//
+	document.getElementById("demo5").innerHTML=
+	"here's i find out A to Z text length:"+" "+txt.length;
+	//
+
+	let firstName = "Shahriar";
+	let lastName = "Shakil";
+	let fullName = firstName +" "+lastName;
+	document.getElementById("demo6").innerHTML=
+	"I am" +" "+fullName;
+	//Converting to upperCase lowerCase
+	let text1 = "abcdefgh";
+	let text2 = text1.toUpperCase();
+	console.log(text2);
+	document.getElementById("demo7").innerHTML=
+	"This txt will show in UpperCase:" + text2;
+	//concat() method
+ 	document.getElementById("demo8").innerHTML = 
+	"Using concat() method to write my full name:"+
+	firstName.concat(" ",lastName);
+
+</script>
+<script type="text/javascript">
+	let Brands = ["apple",[1,2,3],"samsung","nokia"];
+	Brands.push("LG")
+	document.getElementById("array").innerHTML=
+	"Using array to write 4 mobile brands name:"+Brands;
+	document.getElementById("array1").innerHTML =
+	" Array indexes start with 0 example; here i call 2 it will show nokia:"+Brands[2];
+	console.log (Array.isArray(Brands));
+	Brands.pop();
+	document.getElementById("array2").innerHTML= 
+	"Using Pop() method to delet last indexe" + Brands;
+	console.log( Brands[1][2]);
+</script>
+</body>
+</html>

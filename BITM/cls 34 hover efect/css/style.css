@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper{
+    width: 80%;
+    min-height: 500px;
+    background-color: #e2e6ea;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.wrapper .box{
+    height: 300px;
+    width: 300px;
+    background-color: #1c7430;
+    margin: 15px;
+    position: relative;
+
+
+}
+.wrapper .box .first-text{
+    position: absolute;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.wrapper .box:hover .first-text{
+    transform: scale(1.0);
+
+}
+.wrapper .box .second-text{
+    position: absolute;
+    top:50px;
+    right: 10px;
+    left: 10px;
+    padding: 10px;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    text-align: justify;
+    transform: scale(0);
+    transition: 1s;
+
+}
+.wrapper .box:hover .second-text{
+    transform: scale(1);
+	display:block;
+}
+

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button id="myBtn">0</button>
+	<script type="text/javascript">
+
+
+
+//object 
+// var d = new Object(null);
+// console.log(d)
+// var Obj = function(name) {
+//   this.name = name
+// }
+// var c = new Obj("hello"); 
+// c.prototype.name="s"
+// console.log(c)
+
+
+
+
+// function Rectangle(a, b) {
+//     this.length = a;
+//     this.width = b;
+//     this.perimeter = 2 * (this.length + this.width);
+//     this.area = this.length * this.width
+// }
+
+// function getSecondLargest(nums) {
+
+//  let sortedArr = nums.sort((a, b) => b - a)
+
+//  let result =sortedArr.filter(value => {
+//         return sortedArr[0]!==value
+//     })
+//  console.log(result)
+// }
+// getSecondLargest([2,3,4,5,5,6,6,6])
+
+//console.log(navigator.appVersion)
+
+// 		var btn = document.getElementById('myBtn');
+// btn.addEventListener('click', function () {
+//   return btn.innerHTML ++
+// });
+
+//1		
+// 		var arrayList = ['a', 'b', 'c', 'd', 'e', 'f']; // Created array
+// var anotherArrayList = arrayList;  // Referenced arrayList by another variable
+// arrayList.length = 0; // Empty the array
+// console.log(anotherArrayList);
+
+//2
+// var trees = ["redwood", "bay", "cedar", "oak", "maple"];
+// delete trees[3];
+// console.log(trees[3]===undefined)
+
+//3
+
+// var bar = true;
+// console.log(bar + 0);   
+// console.log(bar + "xyz");  
+// console.log(bar + true);  
+// console.log(bar + false);
+
+//4
+// var z;
+// z = 1;
+// var y;
+// z = typeof y;
+// y = z;
+// console.log(y)
+
+//5
+
+// var foo = function bar() { 
+// 	return "ss";
+// bar()  //bar  working here
+// 	 };
+// console.log(typeof foo());
+// //bar  is undefined here
+
+//6
+// var salary = "1000$";
+
+// (function () {
+  
+//   console.log("Original salary was " + salary);
+
+//   salary = "5000$";
+
+//   console.log("My New Salary " + salary);
+// })();
+
+//7
+// function User(name) {
+//   this.name = name || "JsGeeks";
+// }
+
+// var person = new User("xyz")["location"] = "USA";
+// console.log(person);
+
+//8
+// (function (){
+// 	console.log("i am IIFE")
+// })();
+
+// var person = {
+// 	name: 'Nishant',
+// 	age: 24
+// }
+// console.log('toString' in person)
+
+//9
+
+// var arr = [10, 32, 65, 2];
+// for (var i = 0; i < arr.length; i++) {
+//   setTimeout(function(i) {
+//   	return function(){
+//     console.log('The index of this number is: ' + i);
+
+//   	}
+//   }(i), 3000);
+// }
+
+//10
+// var employee = {
+//   name: 'Nishant',
+//   displayName: function () {
+//     console.log(this.name);
+//   }
+// };
+
+// var emp1 = Object.create(employee,{
+// 	name:{
+// 		value:"shakil"
+// 	},
+// 	age:25
+// });
+
+// console.log(emp1.age)
+//11
+
+//Defined Person class
+// function Person(name, age, salary) {
+//   this.name = name;
+//   this.age = age;
+//   this.salary = salary;
+//   this.incrementSalary = function (byValue) {
+//     this.salary = this.salary + byValue;
+//   };
+// }
+// function Employee(company){
+// 	this.company = company;
+// }
+
+// Employee.prototype= new Person("shahriar",24,1200)
+// var emp1= new Employee("google")
+// console.log(emp1 instanceof Person)
+
+// var emp2 = new Person("shahriar",24,1500)
+
+// console.log(emp2)
+
+
+//12
+
+// var employee = {
+// 	name: "Nishant"
+// };
+
+// // lock the object 
+// Object.seal(employee);
+
+// // Now try to change the employee object property name
+// employee.name = "John"; // work fine 
+
+// //Now try to add some new property to the object
+// employee.age = 24; 
+// console.log(employee.name )
+
+//13
+// "use strict";
+
+// var employee = {
+// 	name: "Nishant"
+// };
+
+// //Freeze the object
+// Object.freeze(employee); 
+
+// // Seal the object 
+// Object.seal(employee);
+
+// console.log(Object.isExtensible(employee)); // false
+// console.log(Object.isSealed(employee));     // true
+// console.log(Object.isFrozen(employee));     // true
+
+
+// //employee.name = "xyz"; // fails silently unless in strict mode
+// //employee.age = 30;     // fails silently unless in strict mode
+// delete employee.name;
+// console.log(employee.name)
+
+ // using string literal
+
+ //14
+ //  function isString(str) {
+ // 	return typeof(str) == 'string' || str instanceof String;
+ // }
+ 
+ // var ltrlStr = "Hi I am string literal";
+ // var objStr = new String("Hi I am string object");
+ // console.log(isString(ltrlStr)); // true
+ // console.log(isString(objStr)); 
+
+
+// var person = {
+// 	name : 'John',
+// 	age  : 24
+// }
+
+// var address = {
+// 	addressLine1 : 'Some Location x',
+// 	addressLine2 : 'Some Location y',
+// 	city : 'NewYork'
+// } 
+
+//const merge =(toObj,fromObj) => Object.assign(toObj,fromObj)
+// Object.defineProperty(person, 'phoneNo',{
+// 	value : '8888888888'
+	
+// 	})
+// person.phoneNo="99"
+// console.log(person.phoneNo)
+// function person(name,age){
+// 	this.name=name;
+// 	this.age = age;
+//  	this.sayName=function(){
+//  		console.log(this.name)
+//  	}
+// }
+// var ppl = new person("shahriar",24);
+// console.log()
+	</script>
+</body>
+</html>

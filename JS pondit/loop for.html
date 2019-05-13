@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p id="demo0"></p>
+	<p id="demo1"></p>
+	<p id ="demo"></p>
+	<h5 id="demo2"></h5>
+	<h3 id="demo3"></h3>
+
+
+
+
+	<script>
+		var test = "";
+		var m;
+		for(m = 1;m<10;m+=2){
+			test += m +"<br>";
+		}
+
+	document.getElementById("demo0").innerHTML = test;
+
+	</script>
+	
+	<script>
+		let text="";
+		let students = ["Shakil","Shifat","Jony","Raju"];
+		for(i=0;i<students.length;i++){
+			text +="<br>"+students[i]+" "+i;
+		}
+		document.getElementById("demo1").innerHTML = text;
+	</script>
+	<script>
+		var num ="";
+		var j=0;
+		while(j<=5){
+			num += "<br>The number is"+" "+j;
+			j++;
+        }
+		document.getElementById("demo").innerHTML=num;
+		var cars=["BMW","Volvo","Saab","Ford"];
+
+		for(k=0,texts="";k<cars.length;){
+			texts += cars[k]+"<br>";
+			k++;
+		}
+		document.getElementById("demo2").innerHTML=texts;
+//           for/in loop
+
+
+
+var person = {fname:"Shahriar", lname:"Shakil", age:23}; 
+var fullName ="";
+var x;
+for(x in person){
+	fullName += person[x] + " " ;
+}
+document.getElementById("demo3").innerHTML = fullName;
+for (var i = 0; i < 10; i++){
+	document.write(i);
+}
+
+
+
+	</script>
+
+</body>
+</html>

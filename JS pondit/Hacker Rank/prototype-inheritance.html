@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		var x = function(j){
+			this.i=0;
+			this.j = j;
+			
+			}
+			x.prototype.getJ=function(){
+				return this.j
+			}
+			console.log(x.prototype)
+		
+		var x1 = new x(5);
+		console.log(x1.getJ())
+
+	</script>
+</body>
+</html>

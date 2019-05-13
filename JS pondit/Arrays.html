@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Arrays</title>
+  </head>
+  <body>
+    <h3 id ="demo"></h3>
+    <button type="button"onclick="myfunction()" name="button">Try It!</button>
+
+
+    <h4 id ="demo2" style="color:blue;"></h4>
+    <h1 id ="demo3"style="color:red;"></h1>
+    <h5 id ="demo5" style="background-color:yellow;"></h5>
+    <script type="text/javascript">
+
+      var cars={india:"TATA",germany:"VOLVO",usa:"BMW"};
+
+
+    document.getElementById ("demo2").innerHTML = cars["india"];
+      console.log(cars);
+    </script>
+    <script type="text/javascript">
+      var students = ["sakib",[1,2,3,["Rakib","Hasan"],4],"jasson","maria"];
+      document.getElementById("demo3").innerHTML = students [1][3][1];
+      console.log(students[1][3][1]);
+      console.log(Array.isArray(students));
+	  console.log( typeof students);
+    </script>
+
+    <script type="text/javascript">
+      var pc = ["CPU","RAM","HDD"];
+      pc[4]="MOUSE";
+      pc.push("MOTHER BOARD");
+
+
+      document.getElementById("demo").innerHTML = pc;
+
+      function myfunction(){
+
+        pc.push("key-baord");
+        document.getElementById("demo").innerHTML = pc;
+      }
+      document.getElementById("demo5").innerHTML = "we need a good"+" "+pc[5];
+
+    </script>
+  </body>
+</html>

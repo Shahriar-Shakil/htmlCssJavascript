@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tryCatch</title>
+
+</head>
+<body>
+	
+	<script type="text/javascript">
+		//example 1
+		var a = 1;
+		var b = 2;
+		var c = 3;
+// try{
+// 	console.log(d)
+// }catch(e){
+// 	document.write(e.message)
+// }
+
+//example 2
+
+// try {
+// 	function divide (numer,denom){
+// 		if (denom == 0) {
+// 			throw new Error ('Cant divided by 0')
+// 		}
+// 		document.write(numer/denom);
+// 	}
+// 	divide(10,0)
+// }catch(ex){
+// 	document.write(ex)
+// }
+
+// example 3
+// var s = ['tom',"tom@abc.com",'jenny','jenny@abc.com','sally'] 
+// var i = 0;
+// var names= [];
+// var e = [];
+// var error_count =0
+// while (i<s.length){
+
+// }
+// while(i<s.length){
+// 	try{
+// 		result = s[i].search(/@/);
+// 		if (result == -1){
+// 			names.push(s[i]);
+// 		}else {
+// 			throw new Error(s[i]+'is not a valid name')
+// 		}
+// 	}catch(ex){
+// 		e.push(ex);
+		
+// 	}
+// }
+// document.write(names + '<br></br>')
+	
+	// try catch
+function isPositive(a){
+	
+// try {
+//         if(a>0){console.log("yes")}
+//         	else if (a<0){
+//         		throw "Negative Error"
+//         	}else if (a===0){
+//         		throw "Zerro Error"
+//         	}
+// }catch(ex){
+// 	console.log(ex)
+// }
+
+
+ if (a > 0) { return "YES"; }
+    else throw new Error(a ?"Negative Error":"Zero Error")
+}
+console.log(isPositive(-1))
+
+
+
+</script>
+
+</body>
+</html>

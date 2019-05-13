@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<script>
+		function main(r){
+		const PI = Math.PI
+        let area = r * r * PI
+        console.log(area)
+        let peramitar = 2*PI*r
+        console.log(peramitar)
+		}
+	main(2.6)
+	function outer(){
+		var num = 2
+		function inner(){
+			num++;
+			var num = 3;
+			console.log(num)
+		}
+		inner()
+	}
+	outer()
+	</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1 id="demo"></h1>
+	<input id="myInput" type="text" value="BMW">
+<button onclick="checkCar()">Check Car</button>
+<p id="demo1"></p>
+	<script>
+		switch(new Date().getDay()){
+			case 0:
+			day = "sunday";
+			break;
+			case 1:
+			day = "Monday";
+			break;
+			case 2:
+			day = "Tuesday";
+			case 3:
+			day = "Wednesday";
+			break;
+			case 4:
+			day = "Thrusday";
+			break;
+			case 5:
+			day = "Friday";
+			break;
+			case 6:
+			day = "Saturday";
+
+		}
+		document.getElementById("demo").innerHTML="Today is "+ day;
+	</script>
+	<script>
+		function checkCar() {
+  var text;
+  var favCar = document.getElementById("myInput").value;
+
+  switch(favCar) {
+    case "BMW":
+    text = "German car";
+    break;
+    case "Ford":
+    text = "American car";
+    break;
+    case "Peugeot":;
+    text = "French car";
+    break;
+    default :
+    text = "Unknown car name";
+  }
+  document.getElementById("demo1").innerHTML = text;
+}
+	</script>
+</body>
+</html>

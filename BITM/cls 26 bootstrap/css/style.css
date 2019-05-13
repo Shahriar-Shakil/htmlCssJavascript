@@ -1,0 +1,25 @@
+.div-one{
+    width:100%;
+    height: 500px;
+    background-color: gray;
+    display: flex;
+}
+.box-one{
+   flex: 1;
+    height: 200px;
+    background-color: black;
+}
+.box-two{
+    flex: 1;
+    height: 200px;
+    background-color: red;
+}
+.h200{height: 200px;}
+.h50{
+    height: 50px;
+    background-color: #0c5460;
+}
+.h650{
+    height: 650px;
+    background-color: black;
+}

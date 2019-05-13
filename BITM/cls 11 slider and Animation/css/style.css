@@ -1,0 +1,94 @@
+
+
+/* .box1{
+    height: 200px;
+    width:200px;
+    background-color: red;
+!*animation-name: bitm;*!
+    !*animation-duration: 3s;*!
+  !*  animation-iteration-count: infinite;*!
+    position: absolute;
+  !*  animation-name: posi;*!
+    border-radius: 45px;
+    -moz-animation-name: posi;
+    -webkit-animation-name: posi;
+    -o-animation-name: posi;
+    -moz-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count:infinite ;
+    -o-animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation: posi 3s infinite;
+
+
+} */
+
+/* 
+@keyframes bitm {
+0% {width: 300px;background-color: deeppink}
+    25%{width: 100%; height:300px;background-color: darkmagenta}
+    50%{height: 300px; width:300px;background-color: yellow}
+    75%{ height: 800px; width: 300px;}
+    100%{width: 300px;background-color: magenta}
+}*!
+@keyframes posi {
+    0%{background-color: darkmagenta; top:0px; left: 0px; }
+    25%{background-color: yellow; top:0px; left: 76%;}
+    50%{top:700px;left:76%}
+    75%{top:700px;left:0%}
+    100%{top:0px; left: 0px;}
+} */
+/*image slider*/
+
+
+/*
+.box1{
+    position: relative;
+    top: 250px;
+    left: 300px;
+    height: 350px;
+    width:700px;
+    animation-name: bitm;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 40px;
+   
+}
+@keyframes bitm {
+    0%{background-image:url("../img/1.jpg") }
+    25%{background-image:url("../img/2.jpg") }
+    50%{background-image:url("../img/3.jpg") }
+    75%{background-image:url("../img/4.jpg") }
+    100%{background-image:url("../img/5.jpg") }
+
+}*/
+
+/*border*/
+
+.box1{
+    height: 400px;
+    width: 400px;
+
+    margin: 100px;
+
+    box-sizing: border-box;
+   /* background: linear-gradient(to top, gray,red,green);*/
+  /*  background: radial-gradient(red,green,white);*/
+/* background-image: url("../img/4.jpg"); */
+ /*    background-repeat: no-repeat;
+ background-size: cover;
+  */
+}
+h1{
+    border-left: 5px solid red;
+    padding-left: 5px;
+
+}
+.box1:hover{
+    box-shadow:0px 0px 50px 5px  lightblue, 0px 0px 50px 5px red;
+}
+h1:hover{
+    text-shadow:2px 2px orangered;
+}*/

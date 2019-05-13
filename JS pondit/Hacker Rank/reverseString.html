@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+
+
+		// function reverseString(s) {
+
+		// if (typeof s === "string") {
+  //      return s.split("").reverse().join("")
+        
+  //   } else {
+  //       return `s.split is not a function ${s}`
+  //   }
+				
+		
+		// }
+		// console.log(reverseString("dfdfgdsrtfg"))
+
+		function reverseString(s) {
+  
+  try{
+    // Can be chained, but it damages readability
+    console.log(s.split("").reverse().join("")) 
+  }
+  catch(e){
+    console.log(e.message); // Use .message, or you'll get more than expected.
+    console.log(s);
+  }
+
+}
+reverseString(123)
+	</script>
+</body>
+</html>

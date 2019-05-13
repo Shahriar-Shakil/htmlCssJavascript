@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<table>
+    <tr>
+        <th>First Name</th>
+        <td><input type="text" id="firstName"></td>
+    </tr>
+    <tr>
+        <th>Last Name</th>
+        <td><input type="text" id="lastName" ></td>
+    </tr><tr>
+    <th>Full Name</th>
+    <td><input type="text" id="fullName"></td>
+</tr>
+
+</table>
+<hr/>
+
+<br>
+<hr>
+<table>
+    <tr>
+        <th>First Number</th>
+        <td><input type="number" id="firstNumber"></td>
+    </tr>
+    <tr>
+        <th>Last Number</th>
+        <td><input type="number" id="lastNumber"></td>
+    </tr>
+    <tr>
+        <th> Result</th>
+        <td><input type="number" id="result"></td>
+    </tr>
+    <tr>
+        <th></th>
+        <td>
+            <input type="button" value="+" onclick="mycalculator('+')" />
+            <input type="button" value="-"  onclick="mycalculator('-')"/>
+            <input type="button" value="*" onclick="mycalculator('*')"/>
+            <input type="button" value="/" onclick="mycalculator('/')"/>
+            <input type="button" value="%" onclick="mycalculator('%')"/>
+        </td>
+    </tr>
+    <tr>
+        <th></th>
+        <td><input type="button" value="submit" id="btn1"></td>
+    </tr>
+
+</table>
+
+
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src ="js/script.js"></script>
+</body>
+</html>

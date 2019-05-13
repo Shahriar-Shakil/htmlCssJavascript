@@ -1,0 +1,114 @@
+.h100{
+    height: 200px;
+}
+.h50{
+    height: 50px;
+    background-color: green;
+}
+.h650{
+    height: 650px;
+    background-color: black;
+}
+.div-one{
+    width: 100%;
+    height: 500px;
+    background-color: gray;
+    display: flex;
+}
+.box-one{
+    flex: 1;
+    height: 200px;
+    background-color: black; 
+}
+.box-two{
+    flex: 1;
+    height: 200px;
+    background-color: red; 
+}
+
+.dropdown:hover ul{
+    display: block;
+}
+.extraSize{
+    height: 500px;
+    width: 100%;
+}
+.my-caption{
+    background: rgba(0, 0 ,0 ,0.4);
+    margin-bottom: 150px;
+    padding: 30px;
+}
+
+
+
+
+.fontStyle{
+    font-family: 'Raleway', sans-serif;
+}
+.fontStyle2{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-left: 100px;
+}
+.headIcon{
+    margin-left: 40px;
+}
+.extraClass{
+    margin-left: 100px;
+    z-index: 1;
+    background-color: rgba(0,0,0,.0)!important;
+}
+.pfamily{
+    font-family: 'Montserrat', sans-serif;
+    color: #362720;
+    font-size: 14px;
+}
+.extraClassSlider{
+    z-index: -1;
+}
+
+/* plugin style */
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.container .portfolio-menu{
+    text-align: center;
+}
+.container .portfolio-menu ul{
+    list-style-type: none;
+}
+.container .portfolio-menu ul li{
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid red;
+    cursor: pointer;
+}
+.container .portfolio-menu ul li:hover{
+    background-color: red;
+    color: white;
+}
+li.active{
+    background-color: red;
+    color: white;
+}
+.container .portfolio-item{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+.container .portfolio-item .item{
+    width: 300px;
+    margin: 10px;
+}
+.container .portfolio-item .item .item-img{
+    width: 100%;
+    height: 100%;
+}
+

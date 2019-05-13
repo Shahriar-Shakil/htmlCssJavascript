@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lecture 7 object</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+
+	let car = {
+		"door":4, // set a property
+        "color":"red",
+        "drive": function(){
+        	alert("I am driving");
+        },
+        "break": function(){
+        	alert("I am stopping the car");
+        },
+        "seat":[{
+        	"seatNumber":'a',
+        	"Color":'gray'
+        },{
+        	"seatNumber":'b',
+        	"Color":'gray'
+        },{
+        	"seatNumber":'c',
+        	"Color":"gray"
+
+        	}],
+        	'soundbox':{
+        		"button":'volume'
+        	}
+
+
+	};// object literal
+	console.log(car);	
+	console.log(typeof car);
+	console.log (car.color);
+	//car.drive(); //access method 
+	console.log(car["seat"]);
+	console.log(car.seat[2]);
+	console.log(car.door);
+	</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function add2number(){
+
+			console.log(arguments);
+			let number1 = arguments[0];
+			let number2 = arguments[1];
+			let number3 = arguments[2];
+			let result = number1 + number2 + number3;
+			return result;
+			console.log(arguments);
+		}
+		var result = add2number(5,7,100);
+		console.log(result);
+
+
+
+
+		//function defination
+		function sayHello(goodBye){
+			document.write(goodBye);
+			
+
+
+		}
+		sayHello("bye");
+		
+        
+
+	</script>
+</body>
+</html>

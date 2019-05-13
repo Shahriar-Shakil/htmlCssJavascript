@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form validation</title>
+</head>
+<body>
+
+	<h1 id = "form">Form</h1>
+<form name= "myForm"  method="post" target="_parent" onsubmit="returnvalidateForm()">
+	<fieldset>
+		<legend>Personal Information:</legend>
+	FirstName:<br>
+	<input type="text" name="firstname" value=""><br>
+	Last name:<br>
+	<input type="text" name="lastname" value = ""><br><br>
+	<input type="submit" name="" value="submit">
+</fieldset>
+</form>
+	<script type="text/javascript">
+		// console.dir(document);
+		// var form = document.getElementById("form");
+		// console.dir(form);
+		// form.style.color = "red";
+		// form.addEventListener("click",myFunction);
+		// function myFunction(){
+		// 	alert("Please Fill the Form");
+		// }
+		var validdata = document.forms["0"][1].value;
+		// var submit = document.forms["0"][3];
+		// submit.addEventListener("click", runEvent);
+		// function runEvent(e){
+		// 	console.log(e.type);
+		// }
+		function validateForm(){
+			if (validdata == null || validdata == ""){
+				alert("name must be field out");
+				return false;
+			}
+		}
+
+
+
+
+	</script>
+</body>
+</html>

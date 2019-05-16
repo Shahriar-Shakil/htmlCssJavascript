@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sum of a range</title>
+</head>
+<body>
+	
+	<script>
+
+
+	function range(a,b,step){
+	let arr = [];
+	if(a<b ){
+		if(step != undefined){
+		for(let i = a;i<=b; i +=step){
+		arr.push(i)
+	}
+	console.log(arr)
+	return arr;
+	}else{
+		for(let i = a;i<=b; i++){
+		arr.push(i)
+	}
+	console.log(arr)
+	return arr;
+	}
+	}else{
+		for(let i=b;i<=a;i++){
+			arr.push(i)
+		}
+		
+		return arr.reverse();
+	}
+	
+	}
+	
+	function sum(arr){
+return arr.reduce((acc,cur)=>acc+cur)
+	}
+
+
+console.log(sum((range(1,10,2))))
+
+
+
+// 		function modifyArray(nums) {
+//     return nums.map(item=>{
+//    	return item % 2 == 0 ? item*2:item*3
+//    })
+   
+// }
+// for (i = 0; i < 10; i++) {
+//   if (i == 5) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+// var a = "ss"
+// console.log(a.toUpperCase())
+// var d = new Date();
+// var month = d.getFullYear();
+// console.log(month)
+// console.log(modifyArray([1,2,3,4,5,14,15]))
+	</script>
+</body>
+</html>

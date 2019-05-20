@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>slide</title>
+	<script src="jquery.min.js"></script>
+	<style>
+		#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+	</style>
+</head>
+<body>
+	<div id="flip">Click to slide down panel</div>
+<div id="panel">Hello world!</div>
+
+<!-- animation -->
+<button>start animation</button>
+
+<div class="anim" style="background-color: green;height:100px;width:100px;position:absolute;">small</div>
+	<script>
+		$(document).ready(function(){
+			//slideDown
+			// $("#flip").click(function(){
+			// 	$("#panel").slideDown("slow")
+			// })
+			//slideUp
+			// $("#flip").click(function(){
+			// 	$("#panel").slideUp("slow")
+			// })
+			//slideToggle
+			// $("#flip").click(function(){
+			// 	$("#panel").slideToggle()
+			// })
+
+			//animation
+			// $("button").click(function(){
+			// 	$(".anim").animate({
+			// 		left:"300px",
+			// 		opacity:'1',
+			// 		height:'+=50px',
+			// 		width:'+=50px'
+
+			// },800)
+			// })
+
+			//animate-toggle
+
+			// $("button").click(function(){
+   // 			 $(".anim").animate({
+   //   			   height: 'toggle',
+   //   			   opacity:"1"
+   // 					 });
+			// 	}); 
+
+				//queue functionality
+		// 		$("button").click(function(){
+  //       var div = $(".anim");
+  //       div.animate({height: '300px', opacity: '0.4'}, "slow");
+  //       div.animate({width: '300px', opacity: '0.8'}, "slow");
+  //       div.animate({height: '100px', opacity: '0.4'}, "slow");
+  //       div.animate({width: '100px', opacity: '0.8'}, "slow");
+  //   });
+		//example 2
+		// $("button").click(function(){
+		// 	var div = $(".anim");
+		// 	div.animate({left:"500px"},5000);
+		// 	div.animate({fontSize:'3em'},"slow")
+		// 	div.stop();
+		// })
+
+		// chaining methods
+		$("button").click(function(){
+			var div = $(".anim")
+			div.animate({left:"200px"},"slow").
+			animate({top:"200px"},"slow").
+			css("color","red")
+			
+		})
+
+ })
+	</script>
+</body>
+</html>

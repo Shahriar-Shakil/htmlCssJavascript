@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQ html</title>
+	<script src="jquery.min.js"></script>
+</head>
+<body>
+	<!-- get and set -->
+<!-- <p>this is a paragraph</p>
+<input type="text" value="Shahriar Shakil">
+<button>Click me!</button> -->
+
+<!-- add elements -->
+<!-- <p>this is a paragraph</p>
+
+<ol>
+	<li>List item 1</li>
+	<li>List item 2</li>
+	<li>List item 3</li>
+</ol>
+
+<button id="btn1">Append text</button>
+<button id="btn2">Append List Items</button> -->
+
+<!-- remove elem -->
+<div id="div1" style="height:100px;width:300px;border:1px solid black;background-color: yellow">
+	This is some text in the div
+	<p>this is a paragraph</p>
+	<p>this is a paragraph</p>
+
+</div>
+<button id="rmv">remove</button>
+<button id="empt">empty</button>
+<script>
+	
+	//get and set
+	// $(document).ready(function(){
+	// 	//get
+	// 	// $("button").on("click",function(){
+	// 	// 	alert("text: " + $("p").text())
+	// 	// 	console.log($("p").html())
+	// 	// 	console.log("value: " + $("input").val())
+	// 	// 	console.log("attribute :" + $("input").attr("type"))
+	// 	// })
+
+	// 	//set
+	// 	// $("button").click(function(){
+	// 	// 	// $("p").html("<b>hello world!</b>")
+	// 	// 	// $("input").val("shahriar Kabir")
+
+	// 	// })
+
+	// 	//callback
+	// 	// $("button").click(function(){
+	// 	// 	$("p").text(function(i,orgText){
+
+	// 	// 	})
+	// 	// })
+
+	// 	//set attr
+	// 	$("button").click(function(){
+	// 		$("p").attr("class","para")
+	// 	})
+
+	// })
+
+	//add 
+	//$(document).ready(function(){
+		//append
+		// $("#btn1").click(function(){
+		// 	$("p").append(" <b>Appended Text</b>")
+		// })
+		// $("#btn2").click(function(){
+		// 	$("ol").append("<li>Appended Item</li>")
+		// })
+
+		//prepend
+		// $("#btn1").click(function(){
+		// 	$("p").prepend("<b>Some prepend text</b>")
+		// })
+		//  $("#btn2").click(function(){
+		// 	$("ol").prepend("<li>Prepended Item</li>")
+		//  })
+
+		//after() and before()
+		// $("#btn1").click(function(){
+		// 	$("p").before("some text after")
+		// })
+	//})
+
+	//remove() and empty
+	$(document).ready(function(){
+		$("#rmv").click(function(){
+			$("#div1").remove()
+		})
+		$("#empt").click(function(){
+			$("#div1").empty()
+		})
+	})
+
+	
+
+
+	//set
+</script>	
+</body>
+</html>

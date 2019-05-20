@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery</title>
+	<script src="jquery.min.js"></script>
+</head>
+<body>
+	<h2 id="ml">Mouse leave from here</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button class="btn">hide</button>
+<button id="show">show</button>
+<input type="text" placeholder="write something">
+ <input type="text" name="email" placeholder="enter your email">
+<script>
+
+	$(document).ready(function(){
+		//click
+		// $(".btn").click(function(){
+		// 	$("p").hide(1000);
+		// })
+		// $("#show").click(function(){
+		// 	$("p").show(1000,function(){console.log("now its show")});
+		// })
+		$(".btn").click(function(){
+			$("p").toggle(500);
+		})
+		//mouseleave
+		// $("#ml").mouseleave(function(){
+		// 	alert("bye mouse!!!!")
+		// })
+		//hover
+		// $(".btn").hover(function(){
+		// 	console.log("you entered btn")
+		// },function(){
+		// 	console.log("you leave btn")
+		// })
+		//focus
+		$("input").on("focus",function(){
+			$(this).css("background-color","gray")
+		})
+		$("input").blur(function(){
+			$(this).css("background-color","white")
+		})
+		$(".btn").on({
+			mouseenter:function(){
+				$(this).css("background-color","blue");
+			},
+			mouseleave:function(){
+				$(this).css("background-color","lightblue")
+			},
+			click:function(){
+				console.log("clicked me")
+			}
+		})
+
+
+	})
+
+
+</script>
+</body>
+</html>

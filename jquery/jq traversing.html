@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>traversing</title>
+	<script src="jquery.min.js"></script>
+</head>
+<body>
+<!-- <div>
+<p> <span>this is a paragraph</span></p>
+	<h2>shahriar</h2>
+	<p>para</p>
+	<h2>shakil</h2>
+</div>	 -->
+
+<h1>Welcome to My Homepage</h1>
+<h1>Welcome to My Homepage</h1>
+
+
+<p>This is the first paragraph in body.</p>
+
+<div style="border: 1px solid black;">
+  <p>This is the first paragraph in a div.</p>
+  <p>This is the last paragraph in a div.</p>
+</div><br>
+
+<div style="border: 1px solid black;">
+  <p class="intro">This is the first paragraph in another div.</p>
+  <p class="intro">This is the last paragraph in another div.</p>
+</div>
+
+<p>This is the last paragraph in body.</p>
+
+	<script>
+		$(document).ready(function(){
+			// var rslt=$("span").parentsUntil("body")
+			// console.log(rslt)
+			//console.log($("div").find("*"))
+			//console.log($("h2").siblings("h2"))
+			//console.log($("h2").next())
+			//console.log($("h2").nextAll())
+
+			$("p").filter(".intro").css("background-color", "yellow");
+
+		})
+	</script>
+</body>
+</html>

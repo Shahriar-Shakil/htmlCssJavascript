@@ -32,16 +32,23 @@
 <p>This is the last paragraph in body.</p>
 
 	<script>
-		$(document).ready(function(){
-			// var rslt=$("span").parentsUntil("body")
-			// console.log(rslt)
-			//console.log($("div").find("*"))
-			//console.log($("h2").siblings("h2"))
-			//console.log($("h2").next())
-			//console.log($("h2").nextAll())
+		// $(document).ready(function(){
+		// 	// var rslt=$("span").parentsUntil("body")
+		// 	// console.log(rslt)
+		// 	//console.log($("div").find("*"))
+		// 	//console.log($("h2").siblings("h2"))
+		// 	//console.log($("h2").next())
+		// 	//console.log($("h2").nextAll())
 
-			$("p").filter(".intro").css("background-color", "yellow");
+		// 	$("p").filter(".intro").css("background-color", "yellow");
 
+		// })
+		var jq=$.noConflict();
+		jq(document).ready(function(){
+			jq("h1").css({
+				"fontSize":"50px",
+				"color":"red"
+			})
 		})
 	</script>
 </body>

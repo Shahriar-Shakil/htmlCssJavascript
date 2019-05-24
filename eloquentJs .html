@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		// let empty ={}
+		// console.log(empty.toString())
+
+		// console.log(Object.getPrototypeOf(Math.max)==
+		// 	Function.prototype);
+// 		let protoRabbit = {
+// speak(line) {
+// console.log(`The ${this.type} rabbit says '${line}'`);
+// }
+// };
+// let killerRabbit = Object.create(protoRabbit);
+// killerRabbit.type = "killer";
+// killerRabbit.speak("SKREEEE!");
+// console.log(killerRabbit)
+ 
+ class Rabbit {
+ 	constructor(type){
+ 		this.type = type;
+ 	}
+ 	speak(line){
+ 		console.log(`the ${this.type} rabbit say ${line}`)
+ 	}
+ }
+ let killerRabbit = new Rabbit("killer");
+console.log(killerRabbit.speak("hungry"))
+
+// function People(lang){
+// 	this.lang = lang;
+// 	}
+// var People = {
+// 	lang:"english"
+// }
+// // var pp1 = new People("english");
+// // var pp2 = new People("bangla")
+// // console.log(pp2)
+// let pp1 = Object.create(People)
+// console.log(pp1.prototype)
+	</script>
+
+</body>
+</html>
